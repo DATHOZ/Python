@@ -10,7 +10,7 @@ def main():
     primary_controller_ip = "10.x.x.x" 
     secondary_controller_name = "wlc2"
     secondary_controller_ip = "10.x.x.x"
-
+    #populate data.txt with "sh ap search <ap_name>"
     with open("data.txt", 'r') as file:
         data = file.read()
         data = data.splitlines()

@@ -34,6 +34,7 @@ def main():
     primary_controller = get_controller(numpri)
     secondary_controller = get_controller(numsec)
 
+    #populate data.txt with "sh ap summary | inc <ap_name>"
     with open("data.txt", 'r') as file:
         data = file.read()
         data = data.splitlines()
@@ -44,7 +45,7 @@ def main():
         # Cuts line on spaces
         parts = line.split(' ')
         parts_clean = []
-        # Cleans out the spaces
+        # Cleans out the spaces and use [0] as first word
         for part in parts:
             if part != "":
                 parts_clean.append(part)
