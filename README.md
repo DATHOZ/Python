@@ -6,6 +6,7 @@ Python Collection
 ap_moves85.py - This script creates the configuration to migrate APs from AIREOS to IOS XE using the file data.txt with data from command "sh ap search <ap_name>". Run the command on your favorite ssh tool and copy the output into the data.txt file
 
 Example data.txt:
+
 1 00:6b:f1:xx:xx:xx ap3-h10-a AIR-AP2802I-B-K9  
 2 f4:db:e6:xx:xx:xx ap3-l15 AIR-AP2802I-B-K9  
 3 ac:7a:56:xx:xx:xx ap1-m18 AIR-AP2802I-B-K9  
@@ -20,6 +21,7 @@ Example data.txt:
 ap_moves98.py - This script creates the configuration to migrate APs between 9800 IOS XE using the file data.txt with data from command "sh ap summary | inc <ap_name>". Run the command on your favorite ssh tool and copy the output into the data.txt file
 
 Example data.txt:
+
 ap-0000-uxx 2 AIR-AP1815W-B-K9 00ee.abxx.yyyy 00ee.abxx.yyyy US -B 10.x.x.x Registered  
 ap-0000-uxxx 2 AIR-AP1815W-B-K9 00ee.abxx.yyyy 00ee.abxx.yyyy US -B 10.x.x.x Registered  
 ap-0000-uxxxx 2 AIR-AP1815W-B-K9 00ee.abxx.yyyy 00ee.abxx.yyyy US -B 10.x.x.x Registered
